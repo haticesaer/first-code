@@ -1,0 +1,25 @@
+int main(){
+    
+//1. Klavyeden 0 girilinceye kadar girilen sayılardan negatif sayıların adedini ve pozitif olanların ortalamasını hesap edip ekrana yazdıran programı yazınız oluşturunuz.
+
+
+int sayi,ns=0;
+     float ort,ps=0,ptoplam=0.0;
+     while (sayi !=0)
+     {
+           printf("sayi gir: ");
+           scanf("%d",&sayi);
+           if (sayi<0) ns=ns+1;
+           else if (sayi>0)
+{
+    ps=ps+1;
+ptoplam=ptoplam+sayi;
+    
+} 
+
+
+                }
+
+     ort=ptoplam/ps;
+     printf("negatif sayi adedi: %d\n",ns);
+     printf("pozitif sayi adedi: %f ortalama :%f\n",ps,ort);
